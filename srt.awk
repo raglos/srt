@@ -5,7 +5,7 @@ BEGIN{
 # 
 # 00:00:00,000 --> 00:00:00,000
 #
-function convert_time (tstr) {
+function convert_time(tstr) {
     
     h1 = substr (tstr, 0, 3);
     m1 = substr (tstr, 4, 2);
@@ -74,7 +74,7 @@ function convert_time (tstr) {
 
 {
     _ID   = $1;
-    _TIME = convert_time ($2);
+    _TIME = convert_time($2);
     _CONT = "";
     for (i=3; i<=NF; i++) {
         _CONT = _CONT ""$i"\n";
